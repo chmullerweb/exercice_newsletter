@@ -6,7 +6,7 @@ include "config.php";
 
 $inscritDelete = $_GET['delete'];
 
-#J'envoie ma requête à la base de donnée lui indiquant quel ligne id_inscription elle doit supprimer. Cette information est encapsulée dans une variable $_GET
+#J'envoie ma requête à la base de donnée lui indiquant quelle ligne id_inscription elle doit supprimer. Cette information est encapsulée dans une variable $_GET
 $maRequeteDelete = "DELETE FROM inscription WHERE id_inscription = $inscritDelete";
 
 $bdd->query($maRequeteDelete);
